@@ -4,6 +4,6 @@ export default function printMe() {
   const a = { prop1: 'abc', prop2: 'def' };
   const b = { ...a, prop1: 'overridden' };
   console.log('I get called from print.js');
-  console.log(JSON.stringify(b));
+  console.log("Here's an object that was created using the spread operator: " + JSON.stringify(b));
 }
 
