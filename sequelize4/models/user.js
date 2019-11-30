@@ -31,7 +31,10 @@ module.exports = (sequelize, DataTypes) => {
   User.findByIdWithEntitlements = function(id) {
     return User.findOne({
       where: { id },
-      include: [ associatedModels.Entitlement ]
+      include: [ associatedModels.Entitlement ],
+      order: [
+        [ associatedModels.Entitlement, 'id' ]
+      ]
     });
   };
 
