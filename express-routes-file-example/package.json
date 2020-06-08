@@ -1,0 +1,17 @@
+{
+  "name": "express-routes-file-example",
+  "version": "1.0.0",
+  "description": "Example of using express-routes-file with javascript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dylan Nissley",
+  "repository": "dnissley/js",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-routes-file": "^1.0.5"
+  }
+}
